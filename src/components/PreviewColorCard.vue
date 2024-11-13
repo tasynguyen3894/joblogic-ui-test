@@ -1,7 +1,5 @@
 <script lang="ts" setup>
-import { computed, ref, watch } from 'vue';
-
-import type { Combination, Color } from '@/services/interfaces';
+import type { Color } from '@/services/interfaces';
 
 import { useCombinationStore } from '@/stores/combination';
 import ColorList from './Inputs/ColorList.vue';
