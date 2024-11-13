@@ -39,7 +39,7 @@ function handleChangeColor(event: Event, color: Color) {
 
 <template>
   <div class="color-input-option">
-    <div  @click="handleSelect(props.color)" :style="{
+    <div data-test="color-block"  @click="handleSelect(props.color)" :style="{
       'background-color': customColor || props.color.hex
     }" class="color-input-option__color">
       <span v-if="!isShowingCheck">Copy</span>
@@ -47,8 +47,8 @@ function handleChangeColor(event: Event, color: Color) {
 
     </div>
     <div class="color-input-option__infomation">
-      <span class="color-input-option__name">{{ props.color.name }}</span>
-      <span class="color-input-option__hex"><label :for="'color-picker-' + props.color.slug">{{ props.color.hex }}</label></span>
+      <span class="color-input-option__name" data-test="name">{{ props.color.name }}</span>
+      <span class="color-input-option__hex" data-test="hex"><label :for="'color-picker-' + props.color.slug">{{ props.color.hex }}</label></span>
       <input @input="e => handleChangeColor(e, props.color)" :id="'color-picker-' + props.color.slug" type="color" style="visibility: hidden">
     </div>
   </div>
