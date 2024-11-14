@@ -10,7 +10,6 @@ import { useCombinationStore } from '@/stores/combination';
 import RelatedCombainations from '@/components/RelatedCombainations.vue';
 import Footer from '@/components/Inputs/Footer.vue';
 
-
 const combinationStore = useCombinationStore();
 
 const { currentCombination } = storeToRefs(combinationStore);

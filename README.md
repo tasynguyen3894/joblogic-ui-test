@@ -1,6 +1,9 @@
 # joblogic-ui-test
 
-This template should help get you started developing with Vue 3 in Vite.
+The color picker built by VueJS.
+
+Name: Sang Nguyen
+Email: thaisang.nguyen3894@gmail.com
 
 ## Recommended IDE Setup
 

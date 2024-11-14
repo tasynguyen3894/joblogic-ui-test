@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { getColorContrast } from '@/utils/helper';
+import Menu from '@/components/Menu.vue';
 
 const props = defineProps<{
   color: string,
@@ -12,6 +13,7 @@ const props = defineProps<{
       background: props.color,
       color: getColorContrast(props.color)
     }">
+      <Menu :text="props.text " />
       <h1 class="top_title">
         {{ props.text }}
       </h1>
@@ -25,9 +27,10 @@ const props = defineProps<{
   </div>
 </template>
 <style lang="scss" scoped>
+
 .combination-container {
   &__top {
-    // line-height: 0px;
+    padding-top: 25px;
   }
 }
 
